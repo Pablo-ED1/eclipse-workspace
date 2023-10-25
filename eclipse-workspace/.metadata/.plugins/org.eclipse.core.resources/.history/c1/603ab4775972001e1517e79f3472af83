@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class EcuacionesSegundoGradoApp {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Introduce los valores de tu polinomio para resolver tu ecuación Ax2 + By + C");
+    System.out.print("X: ");
+    double x = Double.parseDouble(sc.nextLine());
+    System.out.print("Y: ");
+    double y = Double.parseDouble(sc.nextLine());
+    System.out.print("Z: ");
+    double z = Double.parseDouble(sc.nextLine());
+  }
+}

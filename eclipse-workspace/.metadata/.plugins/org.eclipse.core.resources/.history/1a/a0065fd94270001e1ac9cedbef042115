@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class NavajaSuizaCadenasApp {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Introduce el texto de la cadena 1: ");
+    String cadena1 = sc.nextLine();
+    System.out.print("Introduce el texto de la cadena 2: ");
+    String cadena2 = sc.nextLine();
+    System.out.print(cadena1.length());
+    System.out.print(cadena2.length());
+
+  
+  }
+}

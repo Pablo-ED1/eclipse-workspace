@@ -1,0 +1,23 @@
+package prog.unidad01.actividad206;
+import java.util.Scanner;
+import java.util.Random;
+public class ParalelogramosApp {
+  public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("EXAMEN DE pablo_aguilera_salinas. PROPIEDADES DE LOS PARALELOGRAMOS");
+      
+      System.out.print("Introduce la longitud de los lados horizonteles: ");
+      double h = Double.parseDouble(sc.nextLine());
+      
+      System.out.print("Introduce el límite mínimo de los posibles valores de la longitud del lado vertical ");
+      double min = Double.parseDouble(sc.nextLine());
+      System.out.print("Introduce el límite máximo de los posibles valores de la longitud del lado vertical ");
+      double max = Double.parseDouble(sc.nextLine());
+      
+      Random ran = new Random();
+      ran.nextDouble(h);
+      System.out.println(ran);
+      System.out.print("La longitud del lado vertical obtenida al azar es de: ");
+  }
+
+}

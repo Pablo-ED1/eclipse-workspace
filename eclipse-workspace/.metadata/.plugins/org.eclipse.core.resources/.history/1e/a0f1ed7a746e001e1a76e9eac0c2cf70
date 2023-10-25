@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Act2 {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Introduce el numerador de la fraccion 1");
+    int numerador = Integer.parseInt(sc.nextLine());
+    System.out.print("Introduce el denominador de la fraccion 1");
+    int denominador = Integer.parseInt(sc.nextLine());
+    paquete1.Fraccion fraccion1 = new paquete1.Fraccion(numerador,denominador);
+    
+    System.out.print("Introduce el numerador de la fraccion 2");
+    numerador = Integer.parseInt(sc.nextLine());
+    System.out.print("Introduce el denominador de la fraccion 2");
+    denominador = Integer.parseInt(sc.nextLine());
+    paquete1.Fraccion fraccion2 = new paquete1.Fraccion(numerador,denominador);
+    
+    paquete1.Fraccion suma = fraccion1.suma(fraccion2);
+    paquete1.Fraccion resta = fraccion1.resta(fraccion2);
+    paquete1.Fraccion producto = fraccion1.producto(fraccion2);
+    paquete1.Fraccion division = fraccion1.division(fraccion2);
+    
+    System.out.print("La suma de las dos fracciones es: ");
+    System.out.print(suma);
+    System.out.print("La resta de las dos fracciones es: ");
+    System.out.print(resta);
+    System.out.print("El producto de las dos fracciones es: ");
+    System.out.print(producto);
+    System.out.print("La división de las dos fracciones es: ");
+    System.out.print(division);
+  }
+}

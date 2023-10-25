@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class NavajaSuizaCadenasApp {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Introduce el texto de la cadena 1: ");
+    String cadena1 = sc.nextLine();
+    System.out.print("Introduce el texto de la cadena 2: ");
+    String cadena2 = sc.nextLine();
+    
+    System.out.print("Longitud: ");
+    System.out.println(cadena1.length());
+    System.out.print("Está vacía? ");
+    System.out.println(cadena1.isEmpty());
+    System.out.print("Está vacía / blanca? ");
+    System.out.println(cadena1.isBlank());
+    
+    System.out.print("Longitud: ");
+    System.out.println(cadena2.length());
+    System.out.print("Está vacía? ");
+    System.out.println(cadena2.isEmpty());
+    System.out.print("Está vacía / blanca? ");
+    System.out.println(cadena2.isBlank());
+    
+    System.out.print(cadena1 + cadena2);
+  }
+}
